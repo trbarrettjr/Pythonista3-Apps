@@ -1,4 +1,4 @@
-# [Pythonista3](https://omz-software.com/pythonista/index.html)
+# [Pythonista3](https://omz-software.com/pythonista/index.html) - Apps
 Python Apps for my phone using pythonista!
 
 ## clipboard-qr.py

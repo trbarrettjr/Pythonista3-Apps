@@ -13,4 +13,5 @@ if text == '':
 else:
 	img = qrcode.make(text)
 	clipboard.set_image(img, format='png')
+	img.show()
 	print('Success!')

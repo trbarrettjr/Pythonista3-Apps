@@ -21,7 +21,7 @@ def getMap():
 	conn = ("services.swpc.noaa.gov", 
 	"/images/aurora-forecast-northern-hemisphere.jpg")
 	h1 = http.client.HTTPSConnection(conn[0])
-	h1.request("GET", conn[1], None, headers={"User-Agent": "AuroraPredict/1.1a thomas.b@tmbarrett.xyz"})
+	h1.request("GET", conn[1], None, headers={"User-Agent": "AuroraPredict/1.1a email@domain.tld"}) # Provide an email address in the event they need to contact you.
 	resp = h1.getresponse()
 	if resp.status in range(200, 300):
 		image = resp.read()
@@ -41,7 +41,7 @@ def getIndex(lat, long):
 	conn[1], 
 	None, 
 	headers={
-		"User-Agent": "AuroraPredict/1.1a thomas.b@tmbarrett.xyz", 
+		"User-Agent": "AuroraPredict/1.1a email@domain.tld", # provide an email address in the event they need to contact you.
 		"Accept": "application/json"})
 	resp = h2.getresponse()
 	if resp.status in range(200, 300):
